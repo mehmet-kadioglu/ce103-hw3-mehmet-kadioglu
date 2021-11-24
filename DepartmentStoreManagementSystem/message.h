@@ -96,3 +96,4 @@
 #define translation79 79
 #define translation80 80
 #define translation81 81
+#define translation82 82

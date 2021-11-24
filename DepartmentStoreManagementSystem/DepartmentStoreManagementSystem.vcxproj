@@ -141,6 +141,11 @@
   <ItemGroup>
     <ClCompile Include="DepartmentStoreManagementSystem.c" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="departmentstore.h" />
+    <ClInclude Include="message.h" />
+    <ClInclude Include="translate.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

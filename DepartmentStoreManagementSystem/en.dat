@@ -32,7 +32,7 @@
 31," - Search         "
 32," - Delete Goods   "
 33," - Exit           "
-34,"enter  \"end\" to finish input"
+34,"enter "end" to finish input"
 35,"enter item code:"
 36,"enter quantity:"
 37," * FASHION WEAR * "
@@ -80,4 +80,4 @@
 79,"CHANGE LANGUAGE"
 80,"   Change Language  "
 81," - Change Language  "
-
+82,"enter your choice then press "enter" :"

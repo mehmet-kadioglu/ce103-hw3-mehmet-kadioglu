@@ -32,7 +32,7 @@
 31," - Ara              "
 32," - Urun Sil         "
 33," - Cik              "
-34,"cikmak icin \"end\" yaz"
+34,"cikmak icin "end" yaz"
 35,"urun kodunu gir:"
 36,"miktarini gir:"
 37,"  * MODA GiYiM *  "
@@ -80,4 +80,4 @@
 79,"DiLi DEGiSTiR"
 80,"   Dili Degistir    "
 81," - Dili Degistir    "
-
+82,"seciminizi girin ardindan "enter"a basin :"

@@ -67,13 +67,13 @@ int check(char x[ANS]);
 /**
 *	  @name cursor
 *
-*	  @brief
+*	  @brief Go into functions
 *
-*	  Gets ID(number) of message from line
+*	  Get ascii value of given character for cursor movements with _getch()
 *
-*	  @param  [in] line [\b char*]  Translation line
+*	  @param  [in] no [\b char*]  d_search or d_mainmenu
 **/
-void cursor(int);
+void cursor(int no);
 
 /**
 *	  @name dbill
@@ -128,22 +128,24 @@ void dis_con();
 /**
 *	  @name d_search
 *
-*	  @brief
+*	  @brief Display
 *
-*	  Gets ID(number) of message from line
+*	  Create template for search section
 **/
 void d_search();
 
 /**
 *	  @name highlight
 *
-*	  @brief
+*	  @brief Highlight Text 
 *
-*	  Gets ID(number) of message from line
+*	  Highlight text when moving cursor. This function responsible for printings
 *
-*	  @param  [in] line [\b char*]  Translation line
+*	  @param  [in] no [\b int] go into d_search or d_mainmenu
+* 
+*	  @param  [in] count [\b int] index to choose which option will be cursored
 **/
-void highlight(int, int);
+void highlight(int no, int count);
 
 /*declaration of main menu functions*/
 /**
@@ -181,15 +183,6 @@ void add();
 *	  Gets ID(number) of message from line
 **/
 void del();
-
-/**
-*	  @name exit
-*
-*	  @brief
-*
-*	  Gets ID(number) of message from line
-**/
-void exit();
 
 /*declaration of display submenu functions*/
 /**

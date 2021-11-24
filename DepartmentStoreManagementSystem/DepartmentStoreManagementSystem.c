@@ -16,7 +16,6 @@
 /*start of main*/
 int main()
 {
-    // these functions starting 
     //get current language setting from lang.conf file its "en" or "tr"
     getTranslateLang(langConfig);
 
@@ -40,20 +39,11 @@ void d_mainmenu()
 
 void d_search()
 {
-    char ch;
-    int i;
-    /*const char* menu[] = { "   By Code","   By Rate","   By Quantity","   Back to main menu" };*/
+    // just draw shape then go into cursor(4) for printing text
     system("cls");
-    //textbackground(11);
-    //textcolor(0);
     window(25, 50, 20, 32);
     gotoxy(33, 18);
     printTranslateLang(translation11);
-    /*for (i = 0; i <= 3; i++)
-    {
-        gotoxy(30, 22 + i + 1);
-        printf("%s\n\n\n", menu[i]);
-    }*/
     cursor(4);
 }
 
@@ -63,6 +53,7 @@ void cursor(int no)
     int count = 1;
     char ch = '0';
     gotoxy(30, 23);
+    // loop forever if there is no exit 
     while (1)
     {
         switch (ch)
@@ -78,6 +69,7 @@ void cursor(int no)
         }
         highlight(no, count);
         ch = _getch();
+        // if pressed enter go into this
         if (ch == '\r')
         {
             if (no == 8)
@@ -89,7 +81,7 @@ void cursor(int no)
                 else if (count == 5) d_search();
                 else if (count == 6) del();
                 else if (count == 7) pickLanguage();
-                else   exit(0);
+                else exit(0);
             }
             if (no == 4)
             {
@@ -104,10 +96,9 @@ void cursor(int no)
 
 void highlight(int no, int count)
 {
+    // no == 4 codes for highlighting and printing d_search page
     if (no == 4)
     {
-        //textbackground(11);
-        //textcolor(0);
         gotoxy(30, 23);
         printTranslateLang(translation12);
         gotoxy(30, 24);
@@ -116,8 +107,6 @@ void highlight(int no, int count)
         printTranslateLang(translation14);
         gotoxy(30, 26);
         printTranslateLang(translation15);
-        //textcolor(0);
-        //textbackground(2);
         switch (count)
         {
         case 1:
@@ -139,10 +128,9 @@ void highlight(int no, int count)
         }
     }
 
+    // no == 8 codes for highlighting and printing main page
     if (no == 8)
     {
-        //textbackground(11);
-        //textcolor(0);
         gotoxy(30, 23);
         printTranslateLang(translation20);
         gotoxy(30, 24);
@@ -159,8 +147,6 @@ void highlight(int no, int count)
         printTranslateLang(translation80);
         gotoxy(30, 30);
         printTranslateLang(translation26);
-        //textcolor(0);
-        //textbackground(2);
         switch (count)
         {
         case 1:
