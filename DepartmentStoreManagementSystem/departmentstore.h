@@ -42,24 +42,24 @@ void gotoxy(int x, int y);
 /**
 *	  @name c_code
 *
-*	  @brief
+*	  @brief Find item code
 *
-*	  Gets ID(number) of message from line
+*	  Finding item code if its exist for helping add function
 *
-*	  @param  [in]  [\b char*]  Translation line
+*	  @param  [in] y [\b char*]  item code
 **/
-void c_code(char[]);
+void c_code(char y[]);
 
 /**
 *	  @name check
 *
-*	  @brief Get Identity
+*	  @brief Check Validity of Code
 *
-*	  Gets ID(number) of message from line
+*	  Check code for if it is exist
 *
-*	  @param  [in] line [\b char*]  Translation line
+*	  @param  [in] x [\b char*]  item code
 *
-*	  @retval [\b int] Index of translation line's id
+*	  @retval [\b int] if exist returning 0
 **/
 int check(char x[ANS]);
 
@@ -78,9 +78,9 @@ void cursor(int no);
 /**
 *	  @name dbill
 *
-*	  @brief
+*	  @brief Print page
 *
-*	  Gets ID(number) of message from line
+*	  Printing for calculate bill page
 **/
 void dbill();
 
@@ -97,22 +97,24 @@ void d_mainmenu();
 /**
 *	  @name display
 *
-*	  @brief
+*	  @brief Display all
 *
-*	  Gets ID(number) of message from line
+*	  Display, in all goods in Display All section
 *
-*	  @param  [in] line [\b char*]  Translation line
+*	  @param  [in] item [\b char*]  item
+* 
+*	  @param  [in] i [\b char*]  cursor movement y index
+* 
+*	  @param  [in] j [\b char*]  sequence line index
 **/
-void display(rec*, int, int);
+void display(rec* item, int i, int j);
 
 /**
 *	  @name window
 *
-*	  @brief
+*	  @brief create window
 *
-*	  Gets ID(number) of message from line
-*
-*	  @param  [in] line [\b char*]  Translation line
+*	  Creating windows for sections. first two decide left or right others up or down
 **/
 void window(int, int, int, int);
 
@@ -151,9 +153,9 @@ void highlight(int no, int count);
 /**
 *	  @name bill
 *
-*	  @brief
+*	  @brief Get and print bill
 *
-*	  Getting and printing find a
+*	  Getting bill and printing some text
 **/
 void bill();
 
@@ -169,18 +171,18 @@ void edit();
 /**
 *	  @name add
 *
-*	  @brief
+*	  @brief Add item
 *
-*	  Gets ID(number) of message from line
+*	  Adding item and printing some text
 **/
 void add();
 
 /**
 *	  @name del
 *
-*	  @brief
+*	  @brief delete records
 *
-*	  Gets ID(number) of message from line
+*	  Delete records in delete section
 **/
 void del();
 
@@ -188,35 +190,35 @@ void del();
 /**
 *	  @name d_code
 *
-*	  @brief
+*	  @brief Display by code
 *
-*	  Gets ID(number) of message from line
+*	  Display by code for Search section
 **/
 void d_code();
 
 /**
 *	  @name d_rate
 *
-*	  @brief
+*	  @brief Display by rate
 *
-*	  Gets ID(number) of message from line
+*	  Display by rate for Search section
 **/
 void d_rate();
 
 /**
 *	  @name d_quan
 *
-*	  @brief
+*	  @brief Display by quantity
 *
-*	  Gets ID(number) of message from line
+*	  Display by quantity for Search section
 **/
 void d_quan();
 
 /**
 *	  @name d_all
 *
-*	  @brief
+*	  @brief Display all 
 *
-*	  Gets ID(number) of message from line
+*	  Display all records for display all section
 **/
 void d_all();

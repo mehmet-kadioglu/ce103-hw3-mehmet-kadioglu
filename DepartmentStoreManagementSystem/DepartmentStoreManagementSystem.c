@@ -248,6 +248,7 @@ void bill()
 /*function to display bill window*/
 void dbill()
 {
+    // printing bill page
     int i;
     gotoxy(20, 10);
     //;
@@ -259,10 +260,8 @@ void dbill()
     printf("\n\n");
     gotoxy(30, 11);
     printTranslateLang(translation38);
-    //textcolor(1);
     gotoxy(32, 25);
     printTranslateLang(translation39);
-    //textcolor(8);
     gotoxy(13, 27);
     printTranslateLang(translation40);
 
@@ -270,11 +269,10 @@ void dbill()
 /*function to add records*/
 void add()
 {
+    // functions for adding item and printing some text
     FILE* file;
     char y[ACS], x[12];
     system("cls");
-    //textbackground(11);
-    //textcolor(0);
     gotoxy(25, 25);
     printTranslateLang(translation41);
     while (toupper(_getche()) == 'Y') // click y or e to proceed
@@ -305,6 +303,7 @@ void add()
 /*function to check availability of code*/
 void c_code(char y[])
 {
+    // below code for the finding item code if its exist for helping add function
     int flag;
     FILE* file;
     file = fopen("record.txt", "rb");
@@ -479,7 +478,7 @@ void d_all()
         j++;
         if ((j % 20) == 0)
         {
-            gotoxy(27, 47);/*textcolor(0)*/;
+            gotoxy(27, 47);
             printTranslateLang(translation63);
             _getch();
             system("cls");
@@ -653,7 +652,8 @@ void dis_con()
 /*function to display in screen*/
 void display(rec* item, int i, int j)
 {
-    gotoxy(16, i);//textcolor(13);
+    // function to display all section
+    gotoxy(16, i);
     printf("%4d", j);
     printf("%9s", item->name);
     printf("%12s", item->code);
@@ -668,8 +668,6 @@ void del()
     char x[ANS];
     FILE* file = NULL, * file1 = NULL;
     system("cls");
-    //textbackground(11);
-    //textcolor(0);
     window(23, 51, 25, 34);
     gotoxy(29, 18);
     printTranslateLang(translation71);
@@ -727,10 +725,10 @@ int check(char x[ANS])
 /*function to display box*/
 void window(int a, int b, int c, int d)
 {
+    // xcd and xc9 etc. printing some character
     int i;
     system("cls");
     gotoxy(20, 10);
-    //textcolor(1);
     for (i = 1; i <= 10; i++)
         printf("*");
     printTranslateLang(translation37);
@@ -739,7 +737,6 @@ void window(int a, int b, int c, int d)
     printf("\n\n");
     gotoxy(30, 11);
     printTranslateLang(translation38);
-    //textcolor(4);
     for (i = a; i <= b; i++)
     {
         gotoxy(i, 17);
