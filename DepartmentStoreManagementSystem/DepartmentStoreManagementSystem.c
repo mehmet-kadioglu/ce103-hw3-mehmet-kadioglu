@@ -187,6 +187,7 @@ void highlight(int no, int count)
 
 void bill()
 {
+    // below codes printing and getting bill list
     char x[4] = { 0 };
     int j = 29, q = 0, size = 0, i = 1;
     float total = 0, gtotal = 0;

@@ -153,7 +153,7 @@ void highlight(int no, int count);
 *
 *	  @brief
 *
-*	  Gets ID(number) of message from line
+*	  Getting and printing find a
 **/
 void bill();
 
