@@ -779,8 +779,6 @@ void window(int a, int b, int c, int d)
     printf("\xbb");
     gotoxy(b, d);
     printf("\xbc");
-    //textbackground(11);
-    //textcolor(0);
 }
 
 //This function set global language configuration
@@ -956,15 +954,15 @@ int pickLanguage()
     int  languageChoice = 0;
     system("cls");
 
-    window(25, 70, 20, 32);
-    gotoxy(33, 18);
+    window(16, 61, 20, 32);
+    gotoxy(23, 18);
     printTranslateLang(translation79);
-    gotoxy(27, 24);
+    gotoxy(18, 24);
     printf("----> for english press \"0\".");
-    gotoxy(27, 25);
+    gotoxy(18, 25);
     printf("----> turkce icin \"1\"e basin.");
-    gotoxy(27, 27);
-    printf("enter your choice then press \"enter\" :");
+    gotoxy(18, 27);
+    printTranslateLang(translation82);
     scanf("%d", &languageChoice);
 
     // change language
