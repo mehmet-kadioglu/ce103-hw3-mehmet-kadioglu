@@ -1,0 +1,13 @@
+Submission File Naming	
+Submission File Content	
+Github Code Sharing	
+Classroom Code Sharing	
+Classroom Report Sharing	
+Classroom Doxygen Report Sharing	
+Code Indentation	
+Project and File Types	
+Code or Project Bugs (Not Running or Complaining)  
+Tests an Results	
+Algorithm Solution Methods and Explanations	
+
+Result:100
